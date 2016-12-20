@@ -8,5 +8,5 @@
     label: "InfluxDB host"
     description: "InfluxDB host name or IP address (InfluxDB is on port 8086)"
     type: "string"
-	default: "192.168.100.1"
+    default: "192.168.100.1"
     required: true
