@@ -6,6 +6,7 @@ services:
     network_mode: host
     labels:
       caas.hna.log.container: 'true'
+      io.rancher.scheduler.global: 'true'
   container-monitor:
     privileged: true
     image: mutemaniac/container-monitor:latest
@@ -16,3 +17,4 @@ services:
     - /var/lib/docker/:/var/lib/docker:ro
     labels:
       caas.hna.monitor.container: 'true'
+      io.rancher.scheduler.global: 'true'
