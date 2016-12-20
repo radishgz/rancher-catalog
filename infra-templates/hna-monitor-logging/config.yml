@@ -1,0 +1,8 @@
+name: HNA Monnitoring and Logging Agent
+description: |
+  Monnitoring and Logging agent for HNA
+version: 0.1
+category: HNA
+labels:
+  io.rancher.certified: rancher
+  io.rancher.orchestration.supported: 'cattle'
