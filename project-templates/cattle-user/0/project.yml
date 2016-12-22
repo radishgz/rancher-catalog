@@ -1,5 +1,5 @@
-name: Cattle
-description: Default Cattle template
+name: HNA-User
+description: HNA user template
 stacks:
   - name: network-services
     templateId: 'library:infra*network-services'

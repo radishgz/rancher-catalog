@@ -1,5 +1,5 @@
-name: Cattle
-description: Default Cattle template
+name: HNA-Admin
+description: HNA admin template
 stacks:
   - name: network-services
     templateId: 'library:infra*network-services'
