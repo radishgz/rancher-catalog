@@ -3,7 +3,7 @@ description: HNA admin template
 stacks:
   - name: network-services
     templateId: 'library:infra*network-services'
-  - name: ipsec
+  - name: vxlan-admin
     templateId: 'library:infra*vxlan-admin'
   - name: scheduler
     templateId: 'library:infra*scheduler'

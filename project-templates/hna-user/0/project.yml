@@ -3,7 +3,7 @@ description: HNA user template
 stacks:
   - name: network-services
     templateId: 'library:infra*network-services'
-  - name: ipsec
+  - name: vxlan-user
     templateId: 'library:infra*vxlan-user'
   - name: scheduler
     templateId: 'library:infra*scheduler'
