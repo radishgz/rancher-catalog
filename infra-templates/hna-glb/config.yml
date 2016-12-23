@@ -1,0 +1,8 @@
+name: HNA GLB
+description: |
+  HNA GLB
+version: v0.1
+category: HNA
+labels:
+  io.rancher.certified: rancher
+  io.rancher.orchestration.supported: 'cattle'

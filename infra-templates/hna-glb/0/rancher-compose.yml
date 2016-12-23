@@ -1,0 +1,10 @@
+.catalog:
+  name: "HNA GLB"
+  version: "v0.1"
+  questions:
+    - variable: "${GLB_PORT}"
+      label: "GLB Port"
+      description: "GLB port"
+      type: "string"
+      default: "8088"
+      required: true
