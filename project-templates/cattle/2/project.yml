@@ -1,0 +1,15 @@
+name: Cattle
+description: Default Cattle template
+stacks:
+  - name: network-services
+    templateId: 'library:infra*network-services'
+  - name: vxlan-user
+    templateId: 'library:infra*vxlan-user'
+  - name: scheduler
+    templateId: 'library:infra*scheduler'
+  - name: healthcheck
+    templateId: 'library:infra*healthcheck'
+  - name: beancounter-agent
+    templateId: 'library:infra*beancounter-agent'
+  - name: hna-log-mon
+    templateId: 'library:infra*hna-monitor-logging'
