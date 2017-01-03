@@ -1,0 +1,5 @@
+.catalog:
+  name: "HNA Monnitoring and Logging Agent"
+  version: "v0.2"
+  description: "Monnitoring and Logging agent for HNA"
+  minimum_rancher_version: v1.2.0
