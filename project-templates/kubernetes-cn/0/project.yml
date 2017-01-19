@@ -1,7 +1,7 @@
 name: Kubernetes CN
 description: Default Kubernetes template
 stacks:
-  - name: kubernetes-cn
+  - name: kubernetes
     templateId: 'library:infra*k8s-cn'
   - name: network-services
     templateId: 'library:infra*network-services'
