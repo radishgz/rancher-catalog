@@ -5,7 +5,7 @@ services:
     image: rancher/lb-service-haproxy:v0.5.3
     tty: true
     ports:
-      - "${GLB_SOURCE_PORT}:${GLB_LINK_PORT}"
+      - ${GLB_SOURCE_PORT}:${GLB_LINK_PORT}
     lb_config:
       port_rules:
         - source_port: ${GLB_SOURCE_PORT}

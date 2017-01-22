@@ -3,13 +3,13 @@
   version: "v0.2"
   minimum_rancher_version: v1.4.0-rc1
   questions:
-    - variable: "${GLB_SOURCE_PORT}"
+    - variable: "GLB_SOURCE_PORT"
       label: "GLB Source Port"
       description: "GLB Source port"
       type: "string"
       default: "8088"
       required: true
-    - variable: "${GLB_LINK_PORT}"
+    - variable: "GLB_LINK_PORT"
       label: "GLB Link Port"
       description: "GLB Link port"
       type: "string"
