@@ -11,6 +11,11 @@ services:
     - /var/run/docker.sock:/var/run/docker.sock
     privileged: true
     network_mode: host
+    logging:
+      driver: json-file
+      options:
+        max-size: 25m
+        max-file: '2'
     labels:
       io.rancher.scheduler.global: 'true'
       io.rancher.container.dns: 'true'

@@ -22,3 +22,8 @@ services:
       port: 42
       unhealthy_threshold: 3
       interval: 2000
+    logging:
+      driver: json-file
+      options:
+        max-size: 25m
+        max-file: '2'
