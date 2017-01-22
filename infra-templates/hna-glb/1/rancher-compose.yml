@@ -15,3 +15,17 @@
       type: "string"
       default: "8088"
       required: true
+
+glb:
+  lb_config:
+    port_rules:
+    - protocol: http
+      selector: io.rancher.glb.http=true
+      source_port: ${GLB_SOURCE_PORT}
+  health_check:
+    healthy_threshold: 2
+    response_timeout: 2000
+    port: 42
+    unhealthy_threshold: 3
+    interval: 2000
+    strategy: recreate
