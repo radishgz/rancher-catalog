@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  glb:
+    image: rancher/lb-service-haproxy:v0.5.3
+    tty: true
+    ports:
+      - "${GLB_SOURCE_PORT}:${GLB_LINK_PORT}"
+    lb_config:
+      port_rules:
+        - source_port: ${GLB_SOURCE_PORT}
+          protocol: http
+          selector: io.rancher.glb.http=true
+    labels:
+      io.rancher.service.selector.link: io.rancher.glb=true
+      io.rancher.container.create_agent: true
+      io.rancher.container.agent.role: system
+    command: ["lb-controller", "--controller", "rancherglb", "--provider",  "haproxy"]
+    health_check:
+      response_timeout: 2000
+      healthy_threshold: 2
+      port: 42
+      unhealthy_threshold: 3
+      interval: 2000

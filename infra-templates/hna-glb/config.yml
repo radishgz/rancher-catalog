@@ -1,7 +1,7 @@
 name: HNA GLB
 description: |
   HNA GLB
-version: v0.1
+version: v0.2
 category: HNA
 labels:
   io.rancher.certified: rancher
