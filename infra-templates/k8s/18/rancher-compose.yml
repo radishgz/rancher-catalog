@@ -44,7 +44,19 @@
     label: Pod Infra Container Image
     description: The image whose network/ipc namespaces containers in each pod will use. (It uses kubelet default if left empty)
     required: false
-    default: "gcr.io/google_containers/pause-amd64:3.0"
+    default: "registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0"
+    type: string
+  - variable: RANCHER_K8S_REGISTRY
+    label: Rancher K8s Registry
+    description: Pull rancher k8s images from this Registry
+    required: true
+    default: registry.cn-hangzhou.aliyuncs.com
+    type: string
+  - variable: RANCHER_K8S_NAMESPACE
+    label: Rancher K8s Namespace
+    description: The namespace of rancher k8s image
+    required: true
+    default: rancher-cn
     type: string
 
 kubernetes:
