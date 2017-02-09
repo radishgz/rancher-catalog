@@ -1,7 +1,7 @@
 .catalog:
   name: "HNA GLB"
   version: "v0.2"
-  minimum_rancher_version: v1.4.0-rc1
+  minimum_rancher_version: v1.4.0
   questions:
     - variable: "GLB_SOURCE_PORT"
       label: "GLB Source Port"

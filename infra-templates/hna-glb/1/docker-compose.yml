@@ -2,7 +2,7 @@ version: '2'
 
 services:
   glb:
-    image: rancher/lb-service-haproxy:v0.5.3
+    image: rancher/lb-service-haproxy:v0.5.9
     tty: true
     ports:
       - ${GLB_SOURCE_PORT}:${GLB_LINK_PORT}
