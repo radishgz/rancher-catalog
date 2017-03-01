@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  agent:
+    image: niusmallnan/beancounter:v0.3.13-fix
+    command: [beancounter, agent]
+    environment:
+      INFLUXDB_HOST: ${influxdb_host}
+    tty: true
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    privileged: true
+    network_mode: host
+    labels:
+      io.rancher.scheduler.global: 'true'
+      io.rancher.container.dns: 'true'
+    logging:
+      driver: json-file
+      options:
+        max-size: 25m
+        max-file: '2'
